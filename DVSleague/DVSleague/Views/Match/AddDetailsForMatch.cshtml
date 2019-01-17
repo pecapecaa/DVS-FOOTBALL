@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "AddDetailsForMatch";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model DVSleague.ViewModel.AddNewMatchChoices
+
+<h2>Add match details</h2>
+
+@using (@Html.BeginForm("AddMatchDetails", "Match", new { matchId = ViewBag.MatchId }, FormMethod.Post, null))
+{
+    <div class="form-group">
+        <label>Scorers:</label>
+        @Html.DropDownListFor(m => m.Scorers, Model.Players, new { @class = "form-control", @id = "scorers", @multiple = "multiple" })
+    </div>
+
+    <div class="form-group">
+        <label>Assistants:</label>
+        @Html.DropDownListFor(m => m.Assistants, Model.Players, new { @class = "form-control", @id = "assistants",  @multiple = "multiple" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+
+@section scripts
+{
+    <script>
+        $("#scorers").select2();
+        $("#assistants").select2();
+    </script>
+}
+
+

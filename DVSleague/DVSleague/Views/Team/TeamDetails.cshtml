@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "TeamDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model DVSleague.Models.Team
+
+<div class="textAlign">
+    <div>
+        <div class="fontBold fontSize">@Model.Name</div>
+    </div>
+    <div>
+        <span>League: </span>
+        <span class="fontBold">@Model.League.Name</span>
+    </div>
+    <div>
+        <span>Country: </span>
+        <span class="fontBold">@Model.Country</span>
+    </div>
+    <div>
+        <span>City: </span>
+        <span class="fontBold">@Model.City</span>
+    </div>
+    
+    <a class="btn btn-success margin" href="@Url.RouteUrl("show_players",new { teamId = Model.Id})">Show players</a>
+</div>
+

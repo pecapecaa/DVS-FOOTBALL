@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "ShowLeagueDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model DVSleague.Models.League
+    
+<h2 class="textAlign">League Details</h2>
+<div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        <div class="border textAlign" style="margin-left:50px">
+            <div class="margin">
+                League name: <span class="fontBold">@Model.Name</span>
+            </div>
+            <div class="margin">
+                Country: <span class="fontBold">@Model.Country</span>
+            </div>
+            <div class="margin">
+                Top scorer:
+                <span class="fontBold">
+                    @{
+                        if (Model.TopScorer != null)
+                        {
+                            <span>@Model.TopScorer.FirstName  @Model.TopScorer.LastName</span>
+                        }
+                    }
+                </span>
+            </div>
+            <div class="margin">
+                Top assistant:
+                <span class="fontBold">
+                    @{
+                        if (Model.TopAssistant != null)
+                        {
+                           <span>@Model.TopAssistant.FirstName @Model.TopAssistant.LastName</span>
+                        }
+                    }
+                </span>
+            </div>
+            <div class="margin">
+                MVP:
+                <span class="fontBold">
+                    @{
+                        if (Model.MVP != null)
+                        {
+                            <span>@Model.MVP.FirstName @Model.MVP.LastName</span> 
+                        }
+                    }
+                </span>
+            </div>
+            <a class="btn btn-warning margin" href="@Url.RouteUrl("league_matches", new { leagueId = Model.Id })">Show league matches</a>
+            <a class="btn btn-primary margin" href="@Url.RouteUrl("show_teams_in_league", new { id = Model.Id })">Show all teams in league</a>
+            <a class="btn btn-success margin" href="@Url.RouteUrl("add_new_team", new { leagueId = Model.Id })">Add new team</a>
+            <a class="btn btn-success margin" href="@Url.RouteUrl("add_new_match", new { leagueId = Model.Id })">Add new match</a>
+        </div>
+
+    </div>
+
+</div>
+

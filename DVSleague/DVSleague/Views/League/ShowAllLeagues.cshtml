@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Leagues";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<DVSleague.Models.League>
+
+<h2 class="textAlign">All leagues:</h2>
+
+<div class="row">
+    @{
+        foreach (var league in Model)
+        {
+    <div class="col-lg-3 border">
+        <div class="margin">
+            <span>Name: </span>
+            <span class="fontBold">@league.Name</span>
+        </div>
+        <div class="margin">
+            <span>Number of teams:</span>
+            <span class="fontBold">@league.NumberOfTeams</span>
+        </div>
+        <a class="btn btn-danger floatRight margin" href="@Url.RouteUrl("delete_league",new {id=league.Id})">Delete league</a>
+        <a class="btn btn-success floatRight margin" href="@Url.RouteUrl("show_league_details",new {id=league.Id})">Show league</a>
+    </div>
+        }
+    }
+</div>

@@ -1,0 +1,1067 @@
+2019-01-15 00:59:56.982+0000 WARN [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 3185842176 bytes will be used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2019-01-15 00:59:58.274+0000 INFO [o.n.g.f.m.e.CommunityEditionModule] No locking implementation specified, defaulting to 'forseti'
+2019-01-15 00:59:58.961+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Creating 'DVSleague.db' database.
+2019-01-15 00:59:59.013+0000 INFO [o.n.k.i.f.StatementLocksFactorySelector] No services implementing StatementLocksFactory found. Using SimpleStatementLocksFactory
+2019-01-15 00:59:59.073+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Requirement `Database available` makes database DVSleague.db unavailable.
+2019-01-15 00:59:59.084+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database DVSleague.db is unavailable.
+2019-01-15 00:59:59.204+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-01-15 00:59:59.206+0000 INFO [o.n.i.d.DiagnosticsManager] Neo4j Kernel properties:
+2019-01-15 00:59:59.207+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.enabled=true
+2019-01-15 00:59:59.207+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.active_database=DVSleague.db
+2019-01-15 00:59:59.207+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.edition=enterprise
+2019-01-15 00:59:59.207+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.security.auth_enabled=true
+2019-01-15 00:59:59.207+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.windows_service_name=neo4j
+2019-01-15 00:59:59.207+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2019-01-15 00:59:59.208+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1
+2019-01-15 00:59:59.208+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.enabled=true
+2019-01-15 00:59:59.208+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.import=import
+2019-01-15 00:59:59.209+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.jvm.additional=-XX:+UseG1GC
+2019-01-15 00:59:59.209+0000 INFO [o.n.i.d.DiagnosticsManager] Diagnostics providers:
+2019-01-15 00:59:59.209+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-01-15 00:59:59.209+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.internal.diagnostics.DiagnosticsManager
+2019-01-15 00:59:59.209+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_MEMORY
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_MEMORY
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] OPERATING_SYSTEM
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] CLASSPATH
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] LIBRARY_PATH
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] TIMEZONE_DATABASE
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] NETWORK
+2019-01-15 00:59:59.210+0000 INFO [o.n.i.d.DiagnosticsManager] System memory information:
+2019-01-15 00:59:59.244+0000 INFO [o.n.i.d.DiagnosticsManager] Total Physical memory: 7.91 GB
+2019-01-15 00:59:59.245+0000 INFO [o.n.i.d.DiagnosticsManager] Free Physical memory: 3.43 GB
+2019-01-15 00:59:59.245+0000 INFO [o.n.i.d.DiagnosticsManager] Committed virtual memory: 261.80 MB
+2019-01-15 00:59:59.245+0000 INFO [o.n.i.d.DiagnosticsManager] Total swap space: 9.16 GB
+2019-01-15 00:59:59.246+0000 INFO [o.n.i.d.DiagnosticsManager] Free swap space: 3.53 GB
+2019-01-15 00:59:59.246+0000 INFO [o.n.i.d.DiagnosticsManager] JVM memory information:
+2019-01-15 00:59:59.246+0000 INFO [o.n.i.d.DiagnosticsManager] Free  memory: 88.00 MB
+2019-01-15 00:59:59.246+0000 INFO [o.n.i.d.DiagnosticsManager] Total memory: 128.00 MB
+2019-01-15 00:59:59.247+0000 INFO [o.n.i.d.DiagnosticsManager] Max   memory: 1.98 GB
+2019-01-15 00:59:59.255+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2019-01-15 00:59:59.255+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-01-15 00:59:59.256+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.81 MB, used=6.76 MB, max=240.00 MB, threshold=0.00 B
+2019-01-15 00:59:59.256+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=22.30 MB, used=21.16 MB, max=-1.00 B, threshold=0.00 B
+2019-01-15 00:59:59.257+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=2.88 MB, used=2.61 MB, max=1.00 GB, threshold=0.00 B
+2019-01-15 00:59:59.257+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=70.00 MB, used=18.00 MB, max=-1.00 B, threshold=?
+2019-01-15 00:59:59.257+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=10.00 MB, used=10.00 MB, max=-1.00 B, threshold=?
+2019-01-15 00:59:59.258+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=48.00 MB, used=10.50 MB, max=1.98 GB, threshold=0.00 B
+2019-01-15 00:59:59.258+0000 INFO [o.n.i.d.DiagnosticsManager] Operating system information:
+2019-01-15 00:59:59.258+0000 INFO [o.n.i.d.DiagnosticsManager] Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 4
+2019-01-15 00:59:59.278+0000 INFO [o.n.i.d.DiagnosticsManager] Process id: 11632@DESKTOP-UH1C9QR
+2019-01-15 00:59:59.278+0000 INFO [o.n.i.d.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-01-15 00:59:59.380+0000 INFO [o.n.i.d.DiagnosticsManager] Local timezone: Europe/Prague
+2019-01-15 00:59:59.380+0000 INFO [o.n.i.d.DiagnosticsManager] JVM information:
+2019-01-15 00:59:59.380+0000 INFO [o.n.i.d.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2019-01-15 00:59:59.380+0000 INFO [o.n.i.d.DiagnosticsManager] VM Vendor: Oracle Corporation
+2019-01-15 00:59:59.381+0000 INFO [o.n.i.d.DiagnosticsManager] VM Version: 25.191-b12
+2019-01-15 00:59:59.381+0000 INFO [o.n.i.d.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-01-15 00:59:59.382+0000 INFO [o.n.i.d.DiagnosticsManager] VM Arguments: [-XX:+UnlockExperimentalVMOptions, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -XX:+UseG1GC, -XX:+TrustFinalNonStaticFields, -Dneo4j.ext.udc.source=zip-powershell, -XX:+AlwaysPreTouch, -Djdk.tls.ephemeralDHKeySize=2048, -Dorg.neo4j.cluster.logdirectory=data/log, -XX:-OmitStackTraceInFastThrow, -XX:+DisableExplicitGC, -Dunsupported.dbms.udc.source=zip, -Dlog4j.configuration=file:conf/log4j.properties, -Dfile.encoding=UTF-8, exit]
+2019-01-15 00:59:59.382+0000 INFO [o.n.i.d.DiagnosticsManager] Java classpath:
+2019-01-15 00:59:59.408+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/asm-6.2.jar
+2019-01-15 00:59:59.408+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-graph-matching-3.1.9.jar
+2019-01-15 00:59:59.409+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-compress-1.18.jar
+2019-01-15 00:59:59.409+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-front-end-3.5-3.5.1.jar
+2019-01-15 00:59:59.409+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk\jre\classes
+2019-01-15 00:59:59.409+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-lucene-upgrade-3.5.1.jar
+2019-01-15 00:59:59.409+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/simpleclient_httpserver-0.5.0.jar
+2019-01-15 00:59:59.409+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-backup-3.5.1.jar
+2019-01-15 00:59:59.409+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/txw2-2.3.0.1.jar
+2019-01-15 00:59:59.410+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-fulltext-index-3.5.1.jar
+2019-01-15 00:59:59.410+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-lang-1.4.0.jar
+2019-01-15 00:59:59.410+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-util-3.5-3.5.1.jar
+2019-01-15 00:59:59.410+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/netty-3.9.9.Final.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/simpleclient_dropwizard-0.5.0.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/nashorn.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-beanutils-1.9.3.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/eclipse-collections-9.2.0.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-data-collector-3.5.1.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-planner-3.4-3.4.10.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/bcprov-jdk15on-1.60.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-server-3.5.1.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-kernel-api-3.5.1.jar
+2019-01-15 00:59:59.411+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-graphdb-api-3.5.1.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/agrona-0.9.25.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-planner-spi-3.5-3.5.1.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/simpleclient_common-0.5.0.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-expressions-3.5-3.5.1.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-ssl-3.5.1.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/sunjce_provider.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-config-ogdl-1.4.0.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk\jre\lib\sunrsasign.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk\jre\lib\resources.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-security-enterprise-3.5.1.jar
+2019-01-15 00:59:59.412+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-import-tool-3.5.1.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-compiler-3.1-3.1.9.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk\jre\lib\rt.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jackson-core-asl-1.9.13.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/akka-protobuf_2.11-2.5.18.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/lucene-analyzers-common-5.5.5.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-enterprise-kernel-3.5.1.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-webapp-9.4.11.v20180605.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/akka-cluster-tools_2.11-2.5.18.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-ir-3.4-3.4.10.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-io-9.4.11.v20180605.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-client-9.4.11.v20180605.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-xml-9.4.11.v20180605.jar
+2019-01-15 00:59:59.413+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk\jre\lib\jsse.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/aeron-driver-1.11.2.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-security-9.4.11.v20180605.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/eclipse-collections-api-9.2.0.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-lang3-3.8.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-unsafe-3.5.1.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-values-3.5.1.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-collections-3.5.1.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-io-3.5.1.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/parboiled-core-1.1.7.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-configuration-3.5.1.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-resource-3.5.1.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/sunmscapi.jar
+2019-01-15 00:59:59.414+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-graph-algo-3.5.1.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/akka-cluster_2.11-2.5.18.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/FastInfoset-1.2.13.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-logical-plans-3.4-3.4.10.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-3.5.1.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-slotted-runtime-3.5.1.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-causal-clustering-commercial-3.5.1.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/cldrdata.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-expression-3.4-3.4.10.jar
+2019-01-15 00:59:59.415+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-interpreted-runtime-3.5.1.jar
+2019-01-15 00:59:59.416+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/parboiled-scala_2.11-1.1.7.jar
+2019-01-15 00:59:59.416+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-management-3.5.1.jar
+2019-01-15 00:59:59.416+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-common-3.5.1.jar
+2019-01-15 00:59:59.416+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-crypto-hash-1.4.0.jar
+2019-01-15 00:59:59.417+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-logging-1.1.1.jar
+2019-01-15 00:59:59.417+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/kiama_2.11-2.1.0.jar
+2019-01-15 00:59:59.417+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/jfxrt.jar
+2019-01-15 00:59:59.417+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/zipfs.jar
+2019-01-15 00:59:59.417+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-3.5.1.jar
+2019-01-15 00:59:59.417+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-causal-clustering-3.5.1.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk\jre\lib\charsets.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-command-line-3.5.1.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/akka-distributed-data_2.11-2.5.18.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jProcesses-1.6.4.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-enterprise-cypher-3.5.1.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jaxb-runtime-2.3.0.1.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-security-commercial-3.5.1.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-server-9.4.11.v20180605.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-legacy-3.5.1.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-concurrent-3.5.1.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-rewriting-3.5-3.5.1.jar
+2019-01-15 00:59:59.418+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/ssl-config-core_2.11-0.3.6.jar
+2019-01-15 00:59:59.419+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-morsel-runtime-3.5.1.jar
+2019-01-15 00:59:59.419+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jersey-servlet-1.19.3.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/asm-tree-6.2.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-jmx-3.5.1.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-server-enterprise-3.5.1.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/asm-analysis-6.2.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-lang-2.6.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk\jre\lib\jfr.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-compiled-expressions-3.5.1.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-consistency-check-3.5.1.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/lucene-queryparser-5.5.5.jar
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/
+2019-01-15 00:59:59.420+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-csv-3.5.1.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-planner-spi-3.4-3.4.10.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/akka-remote_2.11-2.5.18.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-crypto-cipher-1.4.0.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jPowerShell-1.9.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-browser-3.2.15.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jersey-server-1.19.3.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-auth-plugin-api-3.5.1.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-parser-3.5-3.5.1.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-query-logging-3.5.1.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-event-1.4.0.jar
+2019-01-15 00:59:59.421+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/lz4-1.3.0.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/scala-reflect-2.11.12.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-lucene-index-3.5.1.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-util-9.4.11.v20180605.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-core-1.4.0.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-ha-3.5.1.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/lucene-core-5.5.5.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jackson-mapper-asl-1.9.13.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-servlet-9.4.11.v20180605.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-index-3.5.1.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/sunpkcs11.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/javax.servlet-api-3.1.0.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-security-3.5.1.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-metrics-3.5.1.jar
+2019-01-15 00:59:59.422+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/bcpkix-jdk15on-1.60.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-bolt-3.5.1.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-configuration-1.10.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/stax-ex-1.7.8.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/sunec.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-text-1.4.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/metrics-core-4.0.2.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/akka-stream_2.11-2.5.18.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jersey-core-1.19.3.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/scala-java8-compat_2.11-0.7.0.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-commercial-3.5.1.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-spatial-index-3.5.1.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-logical-plans-3.5-3.5.1.jar
+2019-01-15 00:59:59.423+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-util-3.4-3.4.10.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/opencsv-2.3.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/activation-1.1.1.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/reactive-streams-1.0.2.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/hazelcast-all-3.7.8.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-collections-3.2.2.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-logging-3.5.1.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-procedure-api-3.5.1.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-server-commercial-3.5.1.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-crypto-core-1.4.0.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/akka-actor_2.11-2.5.18.jar
+2019-01-15 00:59:59.424+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-ast-3.5-3.5.1.jar
+2019-01-15 00:59:59.425+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jdk\jre\lib\jce.jar
+2019-01-15 00:59:59.425+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-com-3.5.1.jar
+2019-01-15 00:59:59.426+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-01-15 00:59:59.426+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-kernel-commercial-3.5.1.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-frontend-3.1-3.1.9.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/openCypher-frontend-1-3.4.10.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-cache-1.4.0.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/commons-io-2.6.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/netty-all-4.1.30.Final.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/aeron-client-1.11.2.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/shiro-config-core-1.4.0.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/simpleclient-0.5.0.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jetty-http-9.4.11.v20180605.jar
+2019-01-15 00:59:59.427+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-kernel-3.5.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jaxb-core-2.3.0.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jsr311-api-1.1.2.r612.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-ir-3.5-3.5.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jline-2.14.3.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cluster-3.5.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/jaccess.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/server-api-3.5.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/localedata.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-dbms-3.5.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-codegen-3.5.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-runtime-util-3.5.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/slf4j-nop-1.7.25.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/scala-parser-combinators_2.11-1.1.1.jar
+2019-01-15 00:59:59.428+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/slf4j-api-1.7.25.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-udc-3.5.1.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/WMI4Java-1.6.1.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/istack-commons-runtime-3.0.5.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-diagnostics-3.5.1.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-physical-planning-3.5.1.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/metrics-graphite-4.0.2.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/dnsns.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jdk/jre/lib/ext/access-bridge-64.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jackson-jaxrs-1.9.13.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/lucene-codecs-5.5.5.jar
+2019-01-15 00:59:59.429+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/neo4j-cypher-planner-3.5-3.5.1.jar
+2019-01-15 00:59:59.430+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/config-1.3.3.jar
+2019-01-15 00:59:59.430+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/asm-util-6.2.jar
+2019-01-15 00:59:59.430+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/jaxb-api-2.3.0.jar
+2019-01-15 00:59:59.430+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/caffeine-2.6.2.jar
+2019-01-15 00:59:59.431+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/scallop_2.11-2.1.1.jar
+2019-01-15 00:59:59.431+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/PetarVasiljevic/Desktop/neo4j-enterprise-3.5.1/lib/scala-library-2.11.12.jar
+2019-01-15 00:59:59.431+0000 INFO [o.n.i.d.DiagnosticsManager] Library path:
+2019-01-15 00:59:59.432+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\bin\tools
+2019-01-15 00:59:59.432+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\Sun\Java\bin
+2019-01-15 00:59:59.432+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32
+2019-01-15 00:59:59.433+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows
+2019-01-15 00:59:59.434+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+2019-01-15 00:59:59.434+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\nodejs
+2019-01-15 00:59:59.435+0000 INFO [o.n.i.d.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2019-01-15 00:59:59.435+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32
+2019-01-15 00:59:59.435+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32
+2019-01-15 00:59:59.435+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows
+2019-01-15 00:59:59.436+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\wbem
+2019-01-15 00:59:59.436+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2019-01-15 00:59:59.437+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Windows\System32\OpenSSH
+2019-01-15 00:59:59.437+0000 INFO [o.n.i.d.DiagnosticsManager] C:\wamp\bin\php\php5.6.35
+2019-01-15 00:59:59.437+0000 INFO [o.n.i.d.DiagnosticsManager] C:\composer
+2019-01-15 00:59:59.438+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\dotnet
+2019-01-15 00:59:59.438+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\130\Tools\Binn
+2019-01-15 00:59:59.439+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft VS Code\bin
+2019-01-15 00:59:59.439+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Java\jdk\bin
+2019-01-15 00:59:59.440+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Java\jre\bin
+2019-01-15 00:59:59.441+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn
+2019-01-15 00:59:59.441+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn
+2019-01-15 00:59:59.442+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn
+2019-01-15 00:59:59.442+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio
+2019-01-15 00:59:59.443+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn
+2019-01-15 00:59:59.444+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\140\Tools\Binn
+2019-01-15 00:59:59.444+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\140\DTS\Binn
+2019-01-15 00:59:59.445+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\PetarVasiljevic\AppData\Local\Microsoft\WindowsApps
+2019-01-15 00:59:59.446+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\PetarVasiljevic\.dotnet\tools
+2019-01-15 00:59:59.446+0000 INFO [o.n.i.d.DiagnosticsManager] C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1
+2019-01-15 00:59:59.448+0000 INFO [o.n.i.d.DiagnosticsManager] System.properties:
+2019-01-15 00:59:59.448+0000 INFO [o.n.i.d.DiagnosticsManager] sun.boot.library.path = C:\Program Files\Java\jdk\jre\bin
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.rejectClientInitiatedRenegotiation = true
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] path.separator = ;
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding.pkg = sun.io
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] user.country = US
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] user.script = 
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] sun.os.patch.level = 
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] user.dir = C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] neo4j.ext.udc.source = zip-powershell
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] user.variant = 
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] log4j.configuration = file:conf/log4j.properties
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] sun.jnu.encoding = Cp1252
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.udc.source = zip
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] user.home = C:\WINDOWS\system32\config\systemprofile
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] user.timezone = Europe/Prague
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding = UTF-8
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] user.name = DESKTOP-UH1C9QR$
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.cluster.logdirectory = data/log
+2019-01-15 00:59:59.449+0000 INFO [o.n.i.d.DiagnosticsManager] sun.arch.data.model = 64
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] user.language = en
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.ephemeralDHKeySize = 2048
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] file.separator = \
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.endian = little
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] sun.desktop = windows
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.isalist = amd64
+2019-01-15 00:59:59.450+0000 INFO [o.n.i.d.DiagnosticsManager] (IANA) TimeZone Database Version:
+2019-01-15 00:59:59.524+0000 INFO [o.n.i.d.DiagnosticsManager]   TimeZone version: 2018e (available for 599 zone identifiers)
+2019-01-15 00:59:59.525+0000 INFO [o.n.i.d.DiagnosticsManager] Network information:
+2019-01-15 01:00:00.531+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Software Loopback Interface 1:
+2019-01-15 01:00:00.531+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 127.0.0.1
+2019-01-15 01:00:00.531+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft 6to4 Adapter:
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft IP-HTTPS Platform Adapter:
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Bluetooth Device (Personal Area Network):
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3160:
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 192.168.0.22
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:84a:ec7d:51f7:b202%wlan0
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:9828:ad98:b07a:b04d%wlan1
+2019-01-15 01:00:00.532+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Kernel Debug Network Adapter:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Teredo Tunneling Adapter:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP):
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:c4e6:934b:4c98:763%wlan2
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Bluetooth Device (Personal Area Network) #2:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek PCIe FE Family Controller:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:9:3549:2924:ccae%eth6
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Bluetooth Device (RFCOMM Protocol TDI):
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek PCIe FE Family Controller-WFP Native MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek PCIe FE Family Controller-QoS Packet Scheduler-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Realtek PCIe FE Family Controller-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3160-WFP Native MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3160-Virtual WiFi Filter Driver-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3160-Native WiFi Filter Driver-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3160-QoS Packet Scheduler-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 3160-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.533+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-01-15 01:00:00.534+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-01-15 01:00:00.639+0000 INFO [o.n.m.MetricsExtension] Initiating metrics...
+2019-01-15 01:00:01.431+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected format 'RecordFormat:StandardV3_4[v0.A.9]' for the new store
+2019-01-15 01:00:02.899+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] No label index found, this might just be first use. Preparing to rebuild.
+2019-01-15 01:00:02.965+0000 INFO [o.n.k.NeoStoreDataSource] Rotated to transaction log [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.transaction.db.0] version=0, last transaction in previous log=1
+2019-01-15 01:00:02.976+0000 INFO [o.n.k.NeoStoreDataSource] No commits found after last check point (which is at <no log position given>)
+2019-01-15 01:00:03.177+0000 INFO [o.n.b.i.BackupServer] BackupServer communication server started and bound to /127.0.0.1:6362
+2019-01-15 01:00:03.207+0000 WARN [o.n.k.i.s.MetaDataStore] Missing counts store, rebuilding it.
+2019-01-15 01:00:03.233+0000 WARN [o.n.k.i.s.MetaDataStore] Counts store rebuild completed.
+2019-01-15 01:00:03.354+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Rebuilding label index, this may take a while
+2019-01-15 01:00:03.394+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Label index rebuilt (roughly 0 nodes)
+2019-01-15 01:00:03.414+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2019-01-15 01:00:03.426+0000 INFO [o.n.i.d.DiagnosticsManager] Graph Database: enterprise single StoreId{creationTime=1547514002013, randomId=-8814008631856368432, storeVersion=16094931155187206, upgradeTime=1547514002013, upgradeId=1}
+2019-01-15 01:00:03.435+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 3.5.1,99c5f48e0ffe808f65689376e043bf44914de2c1
+2019-01-15 01:00:03.444+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2019-01-15 01:00:03.464+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2019-01-15 01:00:03.473+0000 INFO [o.n.i.d.DiagnosticsManager] Store versions:
+2019-01-15 01:00:03.482+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-01-15 01:00:03.492+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore v0.A.9
+2019-01-15 01:00:03.501+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-01-15 01:00:03.510+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore v0.A.9
+2019-01-15 01:00:03.520+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-01-15 01:00:03.529+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-01-15 01:00:03.539+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore v0.A.9
+2019-01-15 01:00:03.548+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore v0.A.9
+2019-01-15 01:00:03.557+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-01-15 01:00:03.566+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore v0.A.9
+2019-01-15 01:00:03.577+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-01-15 01:00:03.587+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore v0.A.9
+2019-01-15 01:00:03.597+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore v0.A.9
+2019-01-15 01:00:03.605+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore v0.A.9
+2019-01-15 01:00:03.614+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore v0.A.9
+2019-01-15 01:00:03.623+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2019-01-15 01:00:03.632+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2019-01-15 01:00:03.640+0000 INFO [o.n.i.d.DiagnosticsManager] Id usage:
+2019-01-15 01:00:03.650+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-01-15 01:00:03.660+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore: used=0 high=-1
+2019-01-15 01:00:03.669+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-01-15 01:00:03.678+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore: used=0 high=-1
+2019-01-15 01:00:03.688+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-01-15 01:00:03.697+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-01-15 01:00:03.706+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore: used=0 high=-1
+2019-01-15 01:00:03.715+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore: used=0 high=-1
+2019-01-15 01:00:03.723+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-01-15 01:00:03.733+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore: used=0 high=-1
+2019-01-15 01:00:03.742+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-01-15 01:00:03.751+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore: used=0 high=-1
+2019-01-15 01:00:03.759+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore: used=1 high=0
+2019-01-15 01:00:03.771+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2019-01-15 01:00:03.780+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore: used=15 high=14
+2019-01-15 01:00:03.790+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2019-01-15 01:00:03.800+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2019-01-15 01:00:03.810+0000 INFO [o.n.i.d.DiagnosticsManager] Neostore records:
+2019-01-15 01:00:03.822+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1547514002013
+2019-01-15 01:00:03.832+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): -8814008631856368432
+2019-01-15 01:00:03.841+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2019-01-15 01:00:03.851+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 1
+2019-01-15 01:00:03.862+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 16094931155187206
+2019-01-15 01:00:03.871+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2019-01-15 01:00:03.883+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2019-01-15 01:00:03.893+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2019-01-15 01:00:03.902+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1547514002013
+2019-01-15 01:00:03.911+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): 0
+2019-01-15 01:00:03.922+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2019-01-15 01:00:03.931+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2019-01-15 01:00:03.941+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 16
+2019-01-15 01:00:03.948+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 0
+2019-01-15 01:00:03.957+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2019-01-15 01:00:03.964+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2019-01-15 01:00:03.974+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2019-01-15 01:00:03.984+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log:
+2019-01-15 01:00:04.000+0000 INFO [o.n.i.d.DiagnosticsManager] No transactions found in any log
+2019-01-15 01:00:04.011+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2019-01-15 01:00:04.038+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2019-01-15 01:00:04.057+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 239479025664 / 63062310912 / 26
+2019-01-15 01:00:04.069+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2019-01-15 01:00:04.086+0000 INFO [o.n.i.d.DiagnosticsManager]   index:
+2019-01-15 01:00:04.098+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-01-15T02:00:02+0100 - 0.00 B
+2019-01-15 01:00:04.109+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2019-01-15T02:00:02+0100 - 8.00 kB
+2019-01-15 01:00:04.119+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.a: 2019-01-15T02:00:03+0100 - 96.00 B
+2019-01-15 01:00:04.129+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2019-01-15T02:00:02+0100 - 9.00 B
+2019-01-15 01:00:04.140+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labelscanstore.db: 2019-01-15T02:00:03+0100 - 40.00 kB
+2019-01-15 01:00:04.151+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2019-01-15T02:00:01+0100 - 0.00 B
+2019-01-15 01:00:04.160+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.170+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2019-01-15T02:00:01+0100 - 8.00 kB
+2019-01-15 01:00:04.180+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.189+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2019-01-15T02:00:01+0100 - 0.00 B
+2019-01-15 01:00:04.198+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.206+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2019-01-15T02:00:01+0100 - 8.00 kB
+2019-01-15 01:00:04.215+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.225+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2019-01-15T02:00:01+0100 - 0.00 B
+2019-01-15 01:00:04.233+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2019-01-15T02:00:01+0100 - 8.00 kB
+2019-01-15 01:00:04.242+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.251+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.260+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2019-01-15T02:00:01+0100 - 0.00 B
+2019-01-15 01:00:04.271+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.280+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2019-01-15T02:00:01+0100 - 8.00 kB
+2019-01-15 01:00:04.290+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.418+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2019-01-15T02:00:01+0100 - 8.00 kB
+2019-01-15 01:00:04.448+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.464+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2019-01-15T02:00:01+0100 - 8.00 kB
+2019-01-15 01:00:04.475+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.487+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2019-01-15T02:00:01+0100 - 0.00 B
+2019-01-15 01:00:04.496+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.506+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2019-01-15T02:00:01+0100 - 0.00 B
+2019-01-15 01:00:04.518+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.553+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2019-01-15T02:00:01+0100 - 8.00 kB
+2019-01-15 01:00:04.579+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.588+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2019-01-15T02:00:01+0100 - 8.00 kB
+2019-01-15 01:00:04.601+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2019-01-15T02:00:01+0100 - 9.00 B
+2019-01-15 01:00:04.610+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.transaction.db.0: 2019-01-15T02:00:02+0100 - 16.00 B
+2019-01-15 01:00:04.618+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2019-01-15 01:00:04.627+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 112.24 kB
+2019-01-15 01:00:04.634+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 112.00 kB
+2019-01-15 01:00:04.642+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2019-01-15 01:00:04.650+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Fulfilling of requirement 'Database available' makes database DVSleague.db available.
+2019-01-15 01:00:04.660+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database DVSleague.db is ready.
+2019-01-15 01:00:04.667+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2019-01-15 01:00:04.678+0000 INFO [o.n.k.i.p.PageCacheWarmer] Page cache warmup started.
+2019-01-15 01:00:04.704+0000 INFO [o.n.k.i.p.PageCacheWarmer] Page cache warmup completed. 0 pages loaded. Duration: 34ms.
+2019-01-15 01:00:04.944+0000 INFO [o.n.m.MetricsExtension] Sending metrics to CSV file at C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\metrics
+2019-01-15 01:00:06.665+0000 INFO [o.n.b.BoltServer] Bolt server loaded
+2019-01-15 01:00:07.221+0000 INFO [o.n.b.BoltServer] Bolt enabled on 127.0.0.1:7687.
+2019-01-15 01:00:08.267+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=214, gcTime=0, gcCount=0}
+2019-01-15 01:00:08.454+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=115, gcTime=0, gcCount=0}
+2019-01-15 01:00:08.594+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2019-01-15 01:00:08.608+0000 WARN [o.n.m.s.s.ServerMetrics] Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2019-01-15 01:00:12.619+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED START ---
+2019-01-15 01:00:13.463+0000 INFO [o.n.m.s.s.ServerMetrics] Server thread metrics have been registered successfully
+2019-01-15 01:00:13.479+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-15 01:00:15.732+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=199, gcTime=12, gcCount=1}
+2019-01-15 01:00:15.984+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=249, gcTime=12, gcCount=1}
+2019-01-15 01:00:16.110+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED END ---
+2019-01-15 01:00:16.124+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=148, gcTime=0, gcCount=0}
+2019-01-15 01:00:23.619+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 01:01:17.766+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 01:01:18.100+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 01:01:35.432+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 01:02:02.123+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=163, gcTime=0, gcCount=0}
+2019-01-15 01:03:06.878+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 01:04:49.667+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=118, gcTime=0, gcCount=0}
+2019-01-15 01:05:28.702+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-15 01:08:43.900+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=138, gcTime=0, gcCount=0}
+2019-01-15 01:09:10.483+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-15 01:11:43.500+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=117, gcTime=0, gcCount=0}
+2019-01-15 17:35:26.235+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=58590834, gcTime=0, gcCount=0}
+2019-01-15 17:35:26.539+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=813, gcTime=0, gcCount=0}
+2019-01-15 17:35:26.700+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=158, gcTime=0, gcCount=0}
+2019-01-15 17:35:27.713+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=459, gcTime=0, gcCount=0}
+2019-01-15 17:35:27.898+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=537, gcTime=0, gcCount=0}
+2019-01-15 17:35:28.170+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=111, gcTime=10, gcCount=1}
+2019-01-15 17:35:28.449+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=182, gcTime=0, gcCount=0}
+2019-01-15 17:35:28.621+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=115, gcTime=0, gcCount=0}
+2019-01-15 17:39:54.585+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=109, gcTime=0, gcCount=0}
+2019-01-15 18:01:25.780+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 18:03:25.995+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 7 checkpoint started...
+2019-01-15 18:03:26.138+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 7 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a].
+2019-01-15 18:03:26.179+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 7 checkpoint completed in 170ms
+2019-01-15 18:03:26.197+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-15 18:03:30.679+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 18:23:47.595+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 18:27:44.919+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=106, gcTime=0, gcCount=0}
+2019-01-15 18:27:45.084+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=133, gcTime=0, gcCount=0}
+2019-01-15 18:27:51.704+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=0, gcCount=0}
+2019-01-15 18:27:59.588+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=0, gcCount=0}
+2019-01-15 18:28:06.298+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=104, gcTime=0, gcCount=0}
+2019-01-15 18:28:43.881+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-15 18:35:04.725+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-15 18:36:04.770+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-15 18:42:49.153+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=123, gcTime=0, gcCount=0}
+2019-01-15 18:42:54.664+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=130, gcTime=0, gcCount=0}
+2019-01-15 18:43:01.985+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=149, gcTime=0, gcCount=0}
+2019-01-15 18:46:54.484+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=148, gcTime=0, gcCount=0}
+2019-01-15 18:48:06.654+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 12 checkpoint started...
+2019-01-15 18:48:06.683+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 12 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b].
+2019-01-15 18:48:06.715+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 12 checkpoint completed in 51ms
+2019-01-15 18:48:06.723+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-15 18:54:40.845+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-15 18:55:01.369+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=109, gcTime=0, gcCount=0}
+2019-01-15 18:55:33.418+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 64315 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-15 18:55:33.444+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 64315 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-15 18:55:39.329+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=109, gcTime=0, gcCount=0}
+2019-01-15 18:56:20.759+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 503 seconds: MATCH (t:Team),(l:League) WHERE t.Id = 3  AND l.Id = 1 CREATE(t) -[p: participates]->(l) RETURN type(p)
+2019-01-15 18:57:00.123+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 516 seconds: MATCH (t:Team { Id:3})<-[:member]-(player) RETURN player
+2019-01-15 19:01:25.807+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-01-15 19:03:07.018+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 18 checkpoint started...
+2019-01-15 19:03:07.050+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 18 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a].
+2019-01-15 19:03:07.077+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 18 checkpoint completed in 46ms
+2019-01-15 19:03:07.086+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-15 19:04:05.596+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=221, gcTime=0, gcCount=0}
+2019-01-15 19:04:58.913+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=0, gcCount=0}
+2019-01-15 19:05:04.584+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=106, gcTime=0, gcCount=0}
+2019-01-15 19:05:04.703+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=117, gcTime=0, gcCount=0}
+2019-01-15 19:08:15.150+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-15 19:09:22.186+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=115, gcTime=0, gcCount=0}
+2019-01-15 19:13:03.161+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-01-15 19:19:37.282+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=149, gcTime=6, gcCount=1}
+2019-01-15 19:19:37.346+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 31 checkpoint started...
+2019-01-15 19:19:37.423+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 31 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b].
+2019-01-15 19:19:37.424+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-01-15 19:19:37.655+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 31 checkpoint completed in 218ms
+2019-01-15 19:19:37.673+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-15 19:19:39.378+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1445 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-15 19:19:39.403+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1445 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-15 19:22:46.362+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=0, gcCount=0}
+2019-01-15 19:27:56.701+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=115, gcTime=0, gcCount=0}
+2019-01-15 19:30:35.094+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 2531 seconds: MATCH (t:Team { Id:1})<-[:member]-(player) RETURN player
+2019-01-15 19:30:45.923+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-01-15 19:32:28.804+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-01-15 19:34:40.960+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 5461 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-01-15 19:34:40.966+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 5461 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-01-15 19:44:18.729+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-15 20:12:28.881+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-15 20:15:41.962+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=120, gcTime=0, gcCount=0}
+2019-01-15 20:15:42.154+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=0, gcCount=0}
+2019-01-15 20:15:42.385+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=121, gcTime=0, gcCount=0}
+2019-01-15 20:15:42.683+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=0, gcCount=0}
+2019-01-15 20:15:42.955+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=236, gcTime=0, gcCount=0}
+2019-01-15 20:15:43.183+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-15 20:15:43.436+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=145, gcTime=0, gcCount=0}
+2019-01-15 20:15:43.642+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=133, gcTime=0, gcCount=0}
+2019-01-15 20:15:43.822+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-01-15 20:17:06.859+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=0, gcCount=0}
+2019-01-15 20:17:30.366+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=109, gcTime=0, gcCount=0}
+2019-01-15 20:17:38.839+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=0, gcCount=0}
+2019-01-15 20:19:31.233+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-01-15 20:23:01.369+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=128, gcTime=0, gcCount=0}
+2019-01-15 20:25:04.180+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 20:25:11.221+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=103, gcTime=0, gcCount=0}
+2019-01-15 20:25:29.552+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-15 20:25:34.945+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=109, gcTime=0, gcCount=0}
+2019-01-15 20:27:00.197+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=133, gcTime=0, gcCount=0}
+2019-01-15 20:27:00.340+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 4043 seconds: MATCH (p:Player),(t:Team) WHERE p.Id = 2  AND t.Id = 4 CREATE(p) -[m: member]->(t) RETURN type(m)
+2019-01-15 20:27:00.432+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 4043 seconds: MATCH (p:Player) WHERE p.Id = 2  RETURN p
+2019-01-15 20:27:00.479+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 4043 seconds: MATCH (n)<-[m:member]-(p) WHERE p.Id =2  RETURN n
+2019-01-15 20:27:08.385+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 33 checkpoint started...
+2019-01-15 20:27:08.413+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 33 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a].
+2019-01-15 20:27:08.433+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 33 checkpoint completed in 41ms
+2019-01-15 20:27:08.439+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-15 20:29:45.156+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8781 seconds: MATCH (l:League) WHERE l.Id = 2  RETURN l
+2019-01-15 20:29:45.204+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8781 seconds: MATCH (l:League { Id:2 })<-[:participates]-(team) RETURN team
+2019-01-15 20:29:45.260+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8781 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Goals LIMIT 1
+2019-01-15 20:29:45.358+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8781 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Assists LIMIT 1
+2019-01-15 20:30:10.421+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 5629 seconds: MATCH (t:Team),(l:League) WHERE t.Id = 5  AND l.Id = 2 CREATE(t) -[p: participates]->(l) RETURN type(p)
+2019-01-15 20:30:12.379+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 4232 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-15 20:30:12.390+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 4232 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-15 20:31:56.188+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=128, gcTime=0, gcCount=0}
+2019-01-15 20:32:38.794+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 3477 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-01-15 20:32:38.801+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 3477 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-01-15 20:35:59.327+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9156 seconds: MATCH (l:League) WHERE l.Id = 1  RETURN l
+2019-01-15 20:35:59.352+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9156 seconds: MATCH (l:League { Id:1 })<-[:participates]-(team) RETURN team
+2019-01-15 20:35:59.397+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9155 seconds: MATCH (l:League {Id:1})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Goals LIMIT 1
+2019-01-15 20:35:59.439+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9155 seconds: MATCH (l:League {Id:1})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Assists LIMIT 1
+2019-01-15 20:37:29.691+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 6029 seconds: MATCH (t:Team { Id:3})<-[:member]-(player) RETURN player
+2019-01-15 20:37:29.706+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 6029 seconds: MATCH (t:Team { Id:3})<-[:member]-(player) RETURN player
+2019-01-15 20:42:08.632+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 46 checkpoint started...
+2019-01-15 20:42:08.657+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 46 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b].
+2019-01-15 20:42:08.684+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 46 checkpoint completed in 38ms
+2019-01-15 20:42:08.693+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-15 20:43:44.489+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=0, gcCount=0}
+2019-01-15 20:56:30.548+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-15 21:09:00.192+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=103, gcTime=0, gcCount=0}
+2019-01-15 21:10:45.531+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-15 21:16:10.003+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=103, gcTime=0, gcCount=0}
+2019-01-15 21:27:42.916+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-15 21:27:57.701+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 12258 seconds: MATCH (n:League) RETURN n LIMIT 25
+2019-01-15 21:27:57.716+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 12258 seconds: MATCH (n:League) RETURN n LIMIT 25
+2019-01-15 21:28:41.288+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9101 seconds: MATCH (t:Team { Id:1})<-[:member]-(player) RETURN player
+2019-01-15 21:33:26.227+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-15 21:34:07.040+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-15 21:34:57.952+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=119, gcTime=0, gcCount=0}
+2019-01-15 21:39:19.794+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-01-15 21:45:42.202+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=536, gcTime=0, gcCount=0}
+2019-01-15 21:45:42.329+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=173, gcTime=0, gcCount=0}
+2019-01-15 21:50:07.243+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-01-15 21:53:00.130+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 10559 seconds: MATCH (t:Team { Id:4})<-[:member]-(player) RETURN player
+2019-01-15 21:54:03.209+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-01-15 21:56:34.115+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=120, gcTime=0, gcCount=0}
+2019-01-15 22:09:50.529+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=0, gcCount=0}
+2019-01-15 22:10:09.644+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-01-15 22:11:05.640+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=0, gcCount=0}
+2019-01-15 22:11:15.629+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=0, gcCount=0}
+2019-01-15 22:45:37.595+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=171, gcTime=0, gcCount=0}
+2019-01-15 22:46:41.250+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8216 seconds: MATCH (l:League) WHERE l.Id = 3  RETURN l
+2019-01-15 22:46:41.316+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8216 seconds: MATCH (l:League { Id:3 })<-[:participates]-(team) RETURN team
+2019-01-15 22:46:41.374+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8216 seconds: MATCH (l:League {Id:3})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Goals LIMIT 1
+2019-01-15 22:46:41.461+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8216 seconds: MATCH (l:League {Id:3})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Assists LIMIT 1
+2019-01-15 22:46:48.433+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8195 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-15 22:46:48.443+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8195 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-15 22:46:50.607+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 47 checkpoint started...
+2019-01-15 22:46:50.653+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 47 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a].
+2019-01-15 22:46:50.672+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 47 checkpoint completed in 58ms
+2019-01-15 22:46:50.680+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-15 22:48:49.735+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8319 seconds: MATCH (t:Team),(l:League) WHERE t.Id = 7  AND l.Id = 3 CREATE(t) -[p: participates]->(l) RETURN type(p)
+2019-01-15 22:49:16.129+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8370 seconds: MATCH (l:League) WHERE l.Id = 1  RETURN l
+2019-01-15 22:49:16.163+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8370 seconds: MATCH (l:League { Id:1 })<-[:participates]-(team) RETURN team
+2019-01-15 22:49:16.195+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8370 seconds: MATCH (l:League {Id:1})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Goals LIMIT 1
+2019-01-15 22:49:16.239+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8370 seconds: MATCH (l:League {Id:1})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Assists LIMIT 1
+2019-01-15 22:51:21.557+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8661 seconds: MATCH (p:Player) WHERE p.Id = 2  RETURN p
+2019-01-15 22:51:21.573+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8661 seconds: MATCH (p:Player) WHERE p.Id = 2  RETURN p
+2019-01-15 22:51:21.621+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8661 seconds: MATCH (n)<-[m:member]-(p) WHERE p.Id =2  RETURN n
+2019-01-15 22:51:21.633+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8661 seconds: MATCH (n)<-[m:member]-(p) WHERE p.Id =2  RETURN n
+2019-01-15 22:51:37.615+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 12720 seconds: MATCH (p:Player) WHERE p.Id = 1  RETURN p
+2019-01-15 22:51:37.639+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 12720 seconds: MATCH (n)<-[m:member]-(p) WHERE p.Id =1  RETURN n
+2019-01-15 22:53:15.578+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=115, gcTime=0, gcCount=0}
+2019-01-15 22:58:56.974+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-15 23:01:50.846+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 49 checkpoint started...
+2019-01-15 23:01:50.869+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 49 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b].
+2019-01-15 23:01:50.886+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 49 checkpoint completed in 33ms
+2019-01-15 23:01:50.893+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-15 23:03:11.939+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9206 seconds: MATCH (l:League) WHERE l.Id = 2  RETURN l
+2019-01-15 23:03:11.994+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9206 seconds: MATCH (l:League { Id:2 })<-[:participates]-(team) RETURN team
+2019-01-15 23:03:12.031+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9206 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Goals LIMIT 1
+2019-01-15 23:03:12.080+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9206 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Assists LIMIT 1
+2019-01-15 23:26:39.235+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=104, gcTime=0, gcCount=0}
+2019-01-15 23:27:39.161+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-15 23:32:05.453+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-16 00:50:28.609+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=4539576, gcTime=0, gcCount=0}
+2019-01-16 00:50:29.981+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=289, gcTime=0, gcCount=0}
+2019-01-16 00:50:30.291+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=209, gcTime=0, gcCount=0}
+2019-01-16 00:50:30.612+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=235, gcTime=0, gcCount=0}
+2019-01-16 00:50:30.848+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=207, gcTime=0, gcCount=0}
+2019-01-16 00:50:31.558+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=117, gcTime=0, gcCount=0}
+2019-01-16 00:50:31.837+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=213, gcTime=0, gcCount=0}
+2019-01-16 00:50:44.737+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-16 00:52:07.943+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=141, gcTime=0, gcCount=0}
+2019-01-16 00:52:27.915+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=106, gcTime=0, gcCount=0}
+2019-01-16 00:53:21.212+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-01-16 00:53:46.273+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=192, gcTime=0, gcCount=0}
+2019-01-16 00:53:49.503+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 50 checkpoint started...
+2019-01-16 00:53:49.539+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 50 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a].
+2019-01-16 00:53:49.560+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 50 checkpoint completed in 48ms
+2019-01-16 00:53:49.568+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-16 00:55:28.297+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-16 00:55:48.032+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 16127 seconds: MATCH (p:Player),(t:Team) WHERE p.Id = 7  AND t.Id = 3 CREATE(p) -[m: member]->(t) RETURN type(m)
+2019-01-16 00:56:49.370+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 7800 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-16 00:56:49.382+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 7800 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-16 00:57:57.504+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 22173 seconds: MATCH (t:Team { Id:2})<-[:member]-(player) RETURN player
+2019-01-16 00:58:11.172+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=111, gcTime=0, gcCount=0}
+2019-01-16 00:58:57.486+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 15978 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-01-16 00:58:57.542+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 15978 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-01-16 00:59:19.874+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=134, gcTime=0, gcCount=0}
+2019-01-16 00:59:45.274+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-01-16 01:01:56.288+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=116, gcTime=0, gcCount=0}
+2019-01-16 01:02:02.268+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 7840 seconds: MATCH (p:Player) WHERE p.Id = 8  RETURN p
+2019-01-16 01:02:02.312+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 7840 seconds: MATCH (n)<-[m:member]-(p) WHERE p.Id =8  RETURN n
+2019-01-16 01:02:55.814+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=127, gcTime=0, gcCount=0}
+2019-01-16 01:03:12.816+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=145, gcTime=0, gcCount=0}
+2019-01-16 01:03:24.456+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 15954 seconds: MATCH (t:Team { Id:2})<-[:member]-(player) RETURN player
+2019-01-16 01:03:24.464+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 15954 seconds: MATCH (t:Team { Id:2})<-[:member]-(player) RETURN player
+2019-01-16 01:03:24.516+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 15954 seconds: MATCH (t:Team { Id:3})<-[:member]-(player) RETURN player
+2019-01-16 01:04:36.060+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-16 01:04:48.370+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=111, gcTime=0, gcCount=0}
+2019-01-16 01:05:02.167+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 13011 seconds: MATCH (n:Player) RETURN n LIMIT 25
+2019-01-16 01:05:02.239+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 13011 seconds: MATCH (n:Player) RETURN n LIMIT 25
+2019-01-16 01:06:33.312+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=104, gcTime=0, gcCount=0}
+2019-01-16 01:06:35.850+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-01-16 01:06:39.846+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-01-16 01:06:54.934+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-01-16 01:07:00.989+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 615 seconds: MATCH (m:Match),(t:Team) WHERE m.Id = 3  AND t.Id = 3 CREATE(t) -[h: playsHome]->(m) RETURN type(h)
+2019-01-16 01:07:01.049+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 615 seconds: MATCH (m:Match),(t:Team) WHERE m.Id = 3  AND t.Id = 2 CREATE(t) -[a: playsAway]->(m) RETURN type(a)
+2019-01-16 01:07:01.109+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 615 seconds: MATCH (m:Match),(l:League) WHERE m.Id = 3  AND l.Id = 1 CREATE (m) -[b: belongsTo]->(l) RETURN type(b)
+2019-01-16 01:07:01.357+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 615 seconds: MATCH (m:Match) WHERE m.Id = 3  RETURN m
+2019-01-16 01:07:01.401+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 615 seconds: MATCH (t:Team)-[h:playsHome]->(m:Match { Id:3 }) RETURN t
+2019-01-16 01:07:01.457+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 615 seconds: MATCH (t:Team)-[a:playsAway]->(m:Match { Id:3 }) RETURN t
+2019-01-16 01:07:01.517+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 615 seconds: MATCH (p:Player)-[s:scorer]->(m:Match { Id: 3 }) RETURN p
+2019-01-16 01:07:01.577+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 615 seconds: MATCH (p:Player)-[a:assistent]->(m:Match { Id: 3 }) RETURN p
+2019-01-16 01:07:18.184+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 577 seconds: MATCH (m:Match),(p:Player) WHERE m.Id = 3  AND p.Id = 3 CREATE (p) -[s: scorer]->(m) RETURN type(s)
+2019-01-16 01:07:18.320+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 576 seconds: MATCH (m:Match),(p:Player) WHERE m.Id = 3  AND p.Id = 3 CREATE (p) -[a: assistent]->(m) RETURN type(a)
+2019-01-16 01:07:30.642+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=111, gcTime=0, gcCount=0}
+2019-01-16 01:07:49.149+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-16 01:08:13.771+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-01-16 01:08:32.121+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-01-16 01:08:46.764+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-16 01:08:48.292+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-01-16 01:08:50.262+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 103 checkpoint started...
+2019-01-16 01:08:50.290+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 103 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b].
+2019-01-16 01:08:50.317+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 103 checkpoint completed in 47ms
+2019-01-16 01:08:50.329+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-16 01:09:02.067+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=130, gcTime=0, gcCount=0}
+2019-01-16 01:10:09.766+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (m:Match) WHERE m.Id = 2  RETURN m
+2019-01-16 01:10:09.798+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (t:Team)-[h:playsHome]->(m:Match { Id:2 }) RETURN t
+2019-01-16 01:10:09.826+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (t:Team)-[a:playsAway]->(m:Match { Id:2 }) RETURN t
+2019-01-16 01:10:09.854+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (p:Player)-[s:scorer]->(m:Match { Id: 2 }) RETURN p
+2019-01-16 01:10:09.874+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (p:Player)-[a:assistent]->(m:Match { Id: 2 }) RETURN p
+2019-01-16 01:10:09.902+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (m:Match) WHERE m.Id = 1  RETURN m
+2019-01-16 01:10:09.926+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (t:Team)-[h:playsHome]->(m:Match { Id:1 }) RETURN t
+2019-01-16 01:10:09.962+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (t:Team)-[a:playsAway]->(m:Match { Id:1 }) RETURN t
+2019-01-16 01:10:10.018+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (p:Player)-[s:scorer]->(m:Match { Id: 1 }) RETURN p
+2019-01-16 01:10:10.054+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 803 seconds: MATCH (p:Player)-[a:assistent]->(m:Match { Id: 1 }) RETURN p
+2019-01-16 01:11:48.225+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=118, gcTime=0, gcCount=0}
+2019-01-16 01:12:18.127+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=121, gcTime=0, gcCount=0}
+2019-01-16 01:12:30.028+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8748 seconds: MATCH (l:League) WHERE l.Id = 4  RETURN l
+2019-01-16 01:12:30.044+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8748 seconds: MATCH (l:League) WHERE l.Id = 4  RETURN l
+2019-01-16 01:12:30.076+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8748 seconds: MATCH (l:League { Id:4 })<-[:participates]-(team) RETURN team
+2019-01-16 01:12:30.084+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8748 seconds: MATCH (l:League { Id:4 })<-[:participates]-(team) RETURN team
+2019-01-16 01:12:47.416+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 16517 seconds: MATCH (t:Team { Id:4})<-[:member]-(player) RETURN player
+2019-01-16 01:15:26.976+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=116, gcTime=0, gcCount=0}
+2019-01-16 01:15:49.656+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8948 seconds: MATCH (l:League) WHERE l.Id = 2  RETURN l
+2019-01-16 01:15:49.672+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 8948 seconds: MATCH (l:League { Id:2 })<-[:participates]-(team) RETURN team
+2019-01-16 01:16:33.578+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 8863 seconds: MATCH (t:Team),(l:League) WHERE t.Id = 8  AND l.Id = 2 CREATE(t) -[p: participates]->(l) RETURN type(p)
+2019-01-16 01:16:54.614+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=145, gcTime=0, gcCount=0}
+2019-01-16 01:17:45.348+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-16 01:23:50.968+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 127 checkpoint started...
+2019-01-16 01:23:51.015+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 127 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a].
+2019-01-16 01:23:51.046+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 127 checkpoint completed in 62ms
+2019-01-16 01:23:51.061+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-16 01:24:00.651+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=0, gcCount=0}
+2019-01-16 01:24:56.427+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-01-16 01:26:43.192+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1976 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Goals DESC LIMIT 1
+2019-01-16 01:26:43.203+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1976 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Goals DESC LIMIT 1
+2019-01-16 01:26:43.280+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1976 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Assists DESC LIMIT 1
+2019-01-16 01:26:43.293+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1976 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Assists DESC LIMIT 1
+2019-01-16 01:26:43.369+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1976 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY (p.Assists + p.Goals) DESC LIMIT 1
+2019-01-16 01:26:43.382+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1976 seconds: MATCH (l:League {Id:2})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY (p.Assists + p.Goals) DESC LIMIT 1
+2019-01-16 01:26:51.412+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1801 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-16 01:26:51.430+0000 INFO [o.n.c.i.EnterpriseCompilerFactory] Discarded stale query from the query cache after 1801 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-01-16 01:27:37.284+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-16 01:27:54.405+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-16 01:28:48.232+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=121, gcTime=0, gcCount=0}
+2019-01-16 01:29:00.307+0000 WARN [o.n.b.r.MetricsReportingBoltConnection] The client is unauthorized due to authentication failure.
+2019-01-16 01:29:34.128+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9772 seconds: MATCH (l:League) WHERE l.Id = 1  RETURN l
+2019-01-16 01:29:34.154+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9772 seconds: MATCH (l:League { Id:1 })<-[:participates]-(team) RETURN team
+2019-01-16 01:29:34.178+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 2147 seconds: MATCH (l:League {Id:1})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Goals DESC LIMIT 1
+2019-01-16 01:29:34.206+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 2147 seconds: MATCH (l:League {Id:1})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY p.Assists DESC LIMIT 1
+2019-01-16 01:29:34.232+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 2147 seconds: MATCH (l:League {Id:1})<-[:participates]-(t:Team)<-[:member]-(p:Player) return p ORDER BY (p.Assists + p.Goals) DESC LIMIT 1
+2019-01-16 01:32:42.310+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=0, gcCount=0}
+2019-01-16 01:33:12.014+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=164, gcTime=0, gcCount=0}
+2019-01-16 01:33:24.478+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-01-16 01:34:57.074+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=165, gcTime=0, gcCount=0}
+2019-01-16 01:34:58.230+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=0, gcCount=0}
+2019-01-16 01:35:11.381+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-01-16 01:35:38.743+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=125, gcTime=0, gcCount=0}
+2019-01-16 01:35:38.887+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=127, gcTime=0, gcCount=0}
+2019-01-16 01:36:00.694+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=139, gcTime=0, gcCount=0}
+2019-01-16 01:36:27.158+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=131, gcTime=0, gcCount=0}
+2019-01-16 01:36:42.278+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-16 01:36:58.787+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-01-16 01:37:15.164+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=103, gcTime=0, gcCount=0}
+2019-01-16 01:37:27.156+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=0, gcCount=0}
+2019-01-16 01:37:50.841+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=144, gcTime=0, gcCount=0}
+2019-01-16 01:38:32.960+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=0, gcCount=0}
+2019-01-16 01:38:48.056+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=194, gcTime=0, gcCount=0}
+2019-01-16 01:38:51.588+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 141 checkpoint started...
+2019-01-16 01:38:51.666+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 141 to [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.a], from [C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\data\databases\DVSleague.db\neostore.counts.db.b].
+2019-01-16 01:38:51.713+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 141 checkpoint completed in 94ms
+2019-01-16 01:38:51.713+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-01-16 01:38:58.901+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=132, gcTime=0, gcCount=0}
+2019-01-16 01:40:45.079+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-01-16 01:41:19.389+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=271, gcTime=0, gcCount=0}
+2019-01-16 01:41:19.521+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=229, gcTime=0, gcCount=0}
+2019-01-16 01:41:23.313+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=117, gcTime=0, gcCount=0}
+2019-01-16 01:41:32.284+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=154, gcTime=0, gcCount=0}
+2019-01-16 01:41:32.456+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=127, gcTime=0, gcCount=0}
+2019-01-16 01:41:34.112+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=224, gcTime=0, gcCount=0}
+2019-01-16 01:41:34.237+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=348, gcTime=0, gcCount=0}
+2019-01-16 01:41:39.171+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=208, gcTime=0, gcCount=0}
+2019-01-16 01:41:39.298+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=151, gcTime=0, gcCount=0}
+2019-01-16 01:42:33.989+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=106, gcTime=0, gcCount=0}
+2019-01-16 01:42:34.780+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=134, gcTime=0, gcCount=0}
+2019-01-16 01:43:40.423+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=183, gcTime=0, gcCount=0}
+2019-01-16 01:43:45.126+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=0, gcCount=0}
+2019-01-16 01:44:05.568+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=134, gcTime=0, gcCount=0}
+2019-01-16 01:44:05.771+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=0, gcCount=0}
+2019-01-16 01:44:29.668+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=0, gcCount=0}
+2019-01-16 01:44:40.940+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=130, gcTime=0, gcCount=0}
+2019-01-16 01:44:41.081+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-01-16 01:45:10.965+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-01-16 01:45:11.106+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=169, gcTime=0, gcCount=0}
+2019-01-16 01:45:20.745+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=124, gcTime=0, gcCount=0}
+2019-01-16 01:45:20.901+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=143, gcTime=0, gcCount=0}
+2019-01-16 01:45:30.437+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=236, gcTime=0, gcCount=0}
+2019-01-16 01:45:30.578+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=240, gcTime=0, gcCount=0}

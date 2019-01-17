@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "ShowPlayersByTeam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<DVSleague.Models.Player>
+
+<h2 class="textAlign">Players from team:</h2>
+
+<div class="row">
+    @{
+        foreach (var player in Model)
+        {
+            <div class="col-lg-3 border">
+                <div>
+                    <span>First Name: </span>
+                    <span class="fontBold">@player.FirstName</span>
+                </div>
+                <div>
+                    <span>Last Name: </span>
+                    <span class="fontBold">@player.LastName</span>
+                </div>
+                <div>
+                    <span>Date Of Birth: </span>
+                    <span class="fontBold">@player.DateOfBirth</span>
+                </div>
+                <div>
+                    <span>Nationality: </span>
+                    <span class="fontBold">@player.Nationality</span>
+                </div>
+                <div>
+                    <span>Height: </span>
+                    <span class="fontBold">@player.Height</span>
+                </div>
+                <div>
+                    <span>Weight: </span>
+                    <span class="fontBold">@player.Weight</span>
+                </div>
+                <div>
+                    <span>Goals: </span>
+                    <span class="fontBold">@player.Goals</span>
+                </div>
+                <div>
+                    <span>Assists: </span>
+                    <span class="fontBold">@player.Assists</span>
+                </div>
+                <div>
+                    <a class="btn btn-success floatRight margin" href="@Url.RouteUrl("player_details",new {id=player.Id})">Show details</a>
+                    <a class="btn btn-danger floatRight margin" href="@Url.RouteUrl("delete_player",new {id= player.Id, tId=ViewBag.TeamId})">Delete player</a>
+                </div>
+            </div>
+        }
+     }
+    </div

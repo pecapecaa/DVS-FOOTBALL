@@ -1,0 +1,18 @@
+[2019-01-15 01:58:35] [info]  [12556] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2019-01-15 01:58:35] [info]  [12556] Service neo4j name Neo4j Graph Database - neo4j
+[2019-01-15 01:58:35] [info]  [12556] Service 'neo4j' installed
+[2019-01-15 01:58:35] [info]  [12556] Commons Daemon procrun finished
+[2019-01-15 01:59:54] [info]  [11832] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2019-01-15 01:59:54] [info]  [11832] Starting service 'neo4j' ...
+[2019-01-15 01:59:54] [info]  [ 9808] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2019-01-15 01:59:54] [info]  [ 9808] Running 'neo4j' Service...
+[2019-01-15 01:59:54] [info]  [12844] Starting service...
+[2019-01-15 01:59:55] [info]  [12844] Service started in 1463 ms.
+[2019-01-15 01:59:57] [info]  [11832] Service 'neo4j' started
+[2019-01-15 01:59:57] [info]  [11832] Start service finished.
+[2019-01-15 01:59:57] [info]  [11832] Commons Daemon procrun finished
+[2019-01-15 19:00:49] [info]  [ 7064] Commons Daemon procrun (1.0.15.0 64-bit) started
+[2019-01-15 19:00:49] [info]  [ 7064] Starting service 'neo4j' ...
+[2019-01-15 19:00:50] [info]  [ 7064] Service 'neo4j' started
+[2019-01-15 19:00:50] [info]  [ 7064] Start service finished.
+[2019-01-15 19:00:50] [info]  [ 7064] Commons Daemon procrun finished

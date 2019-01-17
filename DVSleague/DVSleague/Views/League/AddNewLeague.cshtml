@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "AddNewLeague";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model DVSleague.Models.League
+
+<h2>Add new league</h2>
+
+@using (@Html.BeginForm("AddLeague", "League", new { }, FormMethod.Post, null))
+{
+    <div class="form-group">
+        <label>League name:</label>
+        @Html.TextBoxFor(l => l.Name, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Country:</label>
+        @Html.TextBoxFor(l => l.Country, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Number of teams in league:</label>
+        @Html.TextBoxFor(l => l.NumberOfTeams, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+}

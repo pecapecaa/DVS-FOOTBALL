@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "ShowMatchesByLeague";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<DVSleague.Models.Match>
+
+<h2 style="text-align:center">Show Matches By League</h2>
+
+<div class="row" style="padding-left: 150px;">
+    @{
+        foreach (var match in Model)
+        {
+            <div class="col-lg-3 border" style="height:200px;  overflow:auto;">
+                <div>
+                    <b>Result:</b>
+                    <div>
+                        <span>@match.HomeTeam.Name - @match.AwayTeam.Name : @match.HomeScore - @match.AwayScore </span>
+                    </div>
+                </div>
+                <div>
+                    <b>Scorers</b>
+                    <div>
+                        @{
+                            foreach (var player in match.Scorers)
+                            {
+                                <div style="margin-left:10px;"> @player.FirstName @player.LastName </div>
+                            }
+                        }
+                    </div>
+                </div>
+                <div>
+                    <b>Assistants:</b>
+                    <div>
+                        @{
+                            foreach (var player in match.Assistents)
+                            {
+                                <div style="margin-left:10px;"> @player.FirstName @player.LastName </div>
+                            }
+                        }
+
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+

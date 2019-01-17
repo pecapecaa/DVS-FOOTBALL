@@ -1,0 +1,28 @@
+
+2019-01-15 01:59:54 Commons Daemon procrun stdout initialized
+2019-01-15 00:59:56.524+0000 INFO  ======== Neo4j 3.5.1 ========
+2019-01-15 00:59:56.540+0000 INFO  Starting...
+2019-01-15 01:00:00.627+0000 INFO  Initiating metrics...
+2019-01-15 01:00:04.934+0000 INFO  Sending metrics to CSV file at C:\Users\PetarVasiljevic\Desktop\neo4j-enterprise-3.5.1\metrics
+2019-01-15 01:00:07.213+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2019-01-15 01:00:08.584+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.all)
+2019-01-15 01:00:08.598+0000 WARN  Server thread metrics not available (missing neo4j.server.threads.jetty.idle)
+2019-01-15 01:00:12.508+0000 INFO  Started.
+2019-01-15 01:00:13.136+0000 INFO  Mounted REST API at: /db/manage
+2019-01-15 01:00:13.329+0000 INFO  Server thread metrics have been registered successfully
+2019-01-15 01:00:15.896+0000 INFO  Remote interface available at http://localhost:7474/
+2019-01-15 01:00:23.611+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 01:01:17.756+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 01:01:18.091+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 01:01:35.421+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 01:03:06.870+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 18:01:25.770+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 18:03:30.670+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 18:23:47.595+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 20:25:04.172+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-15 21:27:42.904+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-16 01:04:36.038+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-16 01:07:49.133+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-16 01:08:46.739+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-16 01:27:37.258+0000 WARN  The client is unauthorized due to authentication failure.
+2019-01-16 01:29:00.286+0000 WARN  The client is unauthorized due to authentication failure.

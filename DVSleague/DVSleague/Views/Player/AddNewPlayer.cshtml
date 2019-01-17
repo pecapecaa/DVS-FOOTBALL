@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "AddNewPlayer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model DVSleague.Models.Player
+
+<h2>Add new player</h2>
+
+@using (@Html.BeginForm("AddPlayer", "Player", new { teamId = ViewBag.TeamId }, FormMethod.Post, null))
+{
+    <div class="form-group">
+        <label>First name:</label>
+        @Html.TextBoxFor(p => p.FirstName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Last name:</label>
+        @Html.TextBoxFor(p => p.LastName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Date of birth:</label>
+        @Html.TextBoxFor(p => p.DateOfBirth, new { @class = "form-control datePicker" })
+    </div>
+
+    <div class="form-group">
+        <label>Nationality:</label>
+        @Html.TextBoxFor(p => p.Nationality, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Position:</label>
+        @Html.TextBoxFor(p => p.Position, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Height:</label>
+        @Html.TextBoxFor(p => p.Height, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Weight:</label>
+        @Html.TextBoxFor(p => p.Weight, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+
+@section scripts{
+    <script>
+        $(".datePicker").datepicker({
+            changeMonth: true,
+            changeYear: true
+        })
+    </script>
+}

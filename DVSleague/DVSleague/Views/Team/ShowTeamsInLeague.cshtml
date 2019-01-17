@@ -1,0 +1,33 @@
+﻿
+@{      
+    ViewBag.Title = "ShowTeamsInLeague";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<DVSleague.Models.Team>
+
+<h1 class="textAlign"> All teams in league</h1>
+@{
+    if(Model != null)
+    {
+        foreach (var team in Model)
+        {
+            <div class="col-lg-3 border heightAuto">
+                <h3>@team.Name</h3>
+                <div>
+                    <span>Country: </span>
+                    <span class="fontBold">@team.Country</span>
+                </div>
+                <div>
+                    <span>City: </span>
+                    <span class="fontBold margin">@team.City</span>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-block btn-xs" href="@Url.RouteUrl("team_details", new { id = team.Id})">Show details</a>
+                    <a class="btn btn-success btn-block btn-xs" href="@Url.RouteUrl("add_new_player", new { teamId = team.Id})">Add player</a>
+                    <a class="btn btn-success btn-block btn-xs" href="@Url.RouteUrl("show_players", new { teamId = team.Id})">Show players</a>
+                    <a class="btn btn-danger btn-block btn-xs" href="@Url.RouteUrl("delete_team", new { id = team.Id})">Delete team</a>
+                </div>
+            </div>
+        }
+    }
+}

@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Player";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model DVSleague.Models.Player
+
+<div>
+    <div class="textAlign">
+        
+        <span class="fontBold fontSize">@Model.FirstName</span> 
+        <span class="fontBold fontSize">@Model.LastName</span>
+        <div class="rowBorder">
+            <span>Date Of Birth:</span>
+            <span class="fontBold">@Model.DateOfBirth.ToString("dd/MM/yyyy")</span>
+        </div>
+        <div class="rowBorder">
+            <span>Nationality:</span>
+            <span class="fontBold">@Model.Nationality</span>
+        </div>
+        <div class="rowBorder">
+            <span>Height:</span>
+            <span class="fontBold">@Model.Height</span>
+        </div>
+        <div class="rowBorder">
+            <span>Weight:</span>
+            <span class="fontBold">@Model.Weight</span>
+        </div>
+        <div class="rowBorder">
+            <span>Goals:</span>
+            <span class="fontBold">@Model.Goals</span>
+            <i class="fa fa-futbol-o"></i>
+        </div>
+        <div class="rowBorder">
+            <span>Assists:</span>
+            <span class="fontBold">@Model.Assists</span>
+        </div>
+
+    </div>
+</div>
